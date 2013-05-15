@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<songs>
+	<song id="2">
+		<interpret>Madonna</interpret>
+		<title>like a prayer</title>
+		<genre>pop</genre>
+		<releasedate>15.03.1989</releasedate>
+		<description>Madonna in ihren besten Jahren.</description>
+		<rate>4 von 5</rate>
+	</song>
+	<song id="3">
+		<interpret>Gotye</interpret>
+		<title>somebody that I used to know</title>
+		<genre>pop</genre>
+		<releasedate>21.12.2011</releasedate>
+		<description>Der Nummer ein Song von Gotye.</description>
+		<rate>5 von 5</rate>
+	</song>
+</songs>

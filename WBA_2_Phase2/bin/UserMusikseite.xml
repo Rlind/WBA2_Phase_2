@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+	<user id="1">
+		<nick>>Hasi</nick>
+		<name>Holger Braun</name>
+		<date>28.06.2012</date>
+		<pic>http...</pic>
+	</user>
+	<user id="2">
+	 	<nick>>Bubble</nick>
+		<name>Theresa Winter</name>
+		<date>12.10.2003</date>
+		<pic>http...</pic>
+	</user>
+</users>
