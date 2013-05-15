@@ -1,4 +1,4 @@
-WBA2_Phase2
+WBA2_Phase_2
 ===========
 ## <a id="inhalt"/>Inhaltsverzeichnis
 * [Projekt] (#p)
