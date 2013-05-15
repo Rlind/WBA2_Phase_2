@@ -52,4 +52,31 @@ public class ObjectFactory {
         return new Users.User();
     }
 
+    public Comments createComments() {
+        return new Comments();
+    }
+
+    /**
+     * Create an instance of {@link Comments.Comment }
+     * 
+     */
+    public Comments.Comment createCommentsComment() {
+        return new Comments.Comment();
+    }
+
+    /**
+     * Create an instance of {@link Interpreten }
+     * 
+     */
+    public Interpreten createInterpreten() {
+        return new Interpreten();
+    }
+
+    /**
+     * Create an instance of {@link Interpreten.Interpret }
+     * 
+     */
+    public Interpreten.Interpret createInterpretenInterpret() {
+        return new Interpreten.Interpret();
+    }
 }
