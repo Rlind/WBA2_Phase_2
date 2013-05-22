@@ -18,10 +18,7 @@ import javax.xml.validation.SchemaFactory;
 
 import org.xml.sax.SAXException;
 
-/**
- * @author Jeremy Dennis Zervo
- *
- */
+
 public class XMLWorker {
 	JAXBContext comments;
 	JAXBContext interpreten;
