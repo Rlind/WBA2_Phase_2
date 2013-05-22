@@ -16,7 +16,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
  * <p>Java-Klasse für anonymous complex type.
  * 
@@ -194,7 +193,7 @@ public class Comments {
         public void setText(String value) {
             this.text = value;
         }
-
+        
     }
 
 }

@@ -79,4 +79,17 @@ public class ObjectFactory {
     public Interpreten.Interpret createInterpretenInterpret() {
         return new Interpreten.Interpret();
     }
+    
+    public Songs createSongs() {
+        return new Songs();
+    }
+
+    /**
+     * Create an instance of {@link Songs.Song }
+     * 
+     */
+    public Songs.Song createSongsSong() {
+        return new Songs.Song();
+    }
+
 }
