@@ -19,7 +19,7 @@ import javax.xml.validation.SchemaFactory;
 import org.xml.sax.SAXException;
 
 
-public class XMLWorker {
+public class XmlHelper {
 	JAXBContext comments;
 	JAXBContext interpreten;
 	JAXBContext users;
@@ -28,7 +28,7 @@ public class XMLWorker {
 	 * Kontext fuer marshal und unmarshall
 	 * @throws JAXBException
 	 */
-	public XMLWorker() throws JAXBException{
+	public XmlHelper() throws JAXBException{
 		this.comments = JAXBContext.newInstance(generated.Comments.class);
 		this.interpreten = JAXBContext.newInstance(generated.Interpreten.class);
 		this.users = JAXBContext.newInstance(generated.Users.class);
@@ -37,7 +37,7 @@ public class XMLWorker {
 
 
 	/**
-	 * Methode zum Auslesen aus der Buchungen-XML-Datei
+	 * Methode zum Auslesen aus der Comments-XML-Datei
 	 * @return (Buchungen) buchungen
 	 * @throws JAXBException
 	 */
@@ -49,8 +49,8 @@ public class XMLWorker {
 	}
 
 	/**
-	 * Methode zum Schreiben in die Buchungen-XML-Datei
-	 * @param buchungsliste
+	 * Methode zum Schreiben in die Comments-XML-Datei
+	 * @param commentsliste
 	 * @throws JAXBException
 	 * @throws SAXException
 	 * @throws FileNotFoundException
@@ -67,8 +67,8 @@ public class XMLWorker {
 	}
 
 	/**
-	 * Methode zum Auslesen aus der Module-XML-Datei
-	 * @return (Module) module
+	 * Methode zum Auslesen aus der Interpreten-XML-Datei
+	 * @return (Interpreten) interpreten
 	 * @throws JAXBException
 	 */
 	public Interpreten unmarshalInterpreten() throws JAXBException{
@@ -79,8 +79,8 @@ public class XMLWorker {
 	}
 
 	/**
-	 * Methode zum Schreiben in die Module-XML-Datei
-	 * @param modulliste
+	 * Methode zum Schreiben in die Interpreten-XML-Datei
+	 * @param interpretenliste
 	 * @throws JAXBException
 	 * @throws SAXException
 	 * @throws FileNotFoundException
@@ -97,8 +97,8 @@ public class XMLWorker {
 	}
 
 	/**
-	 * Methode zum Auslesen aus der Raeume-XML-Datei
-	 * @return (Raeume) raeume
+	 * Methode zum Auslesen aus der Songs-XML-Datei
+	 * @return (Songs) songs
 	 * @throws JAXBException
 	 */
 	public Songs unmarshalSongs() throws JAXBException{
@@ -109,8 +109,8 @@ public class XMLWorker {
 	}
 
 	/**
-	 * Methode zum Schreiben in die Raeume-XML-Datei
-	 * @param raumliste
+	 * Methode zum Schreiben in die Songs-XML-Datei
+	 * @param songliste
 	 * @throws JAXBException
 	 * @throws SAXException
 	 * @throws FileNotFoundException
@@ -127,8 +127,8 @@ public class XMLWorker {
 	}
 
 	/**
-	 * Methode zum Auslesen aus der Stundenplaene-XML-Datei
-	 * @return (Stundenplaene) stundenplaene
+	 * Methode zum Auslesen aus der Users-XML-Datei
+	 * @return (Users) user
 	 * @throws JAXBException
 	 */
 	public Users unmarshalUsers() throws JAXBException{
@@ -139,8 +139,8 @@ public class XMLWorker {
 	}
 
 	/**
-	 * Methode zum Schreiben in die Stundenplaene-XML-Datei
-	 * @param stundenplansliste
+	 * Methode zum Schreiben in die Users-XML-Datei
+	 * @param usersliste
 	 * @throws JAXBException
 	 * @throws SAXException
 	 * @throws FileNotFoundException

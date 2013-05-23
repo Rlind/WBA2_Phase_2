@@ -1,5 +1,5 @@
-package ressourcen;
-import generiert.Stundenplaene;
+package webservice;
+import generated.Comments;
 import generiert.Stundenplaene.Stundenplan;
 
 import javax.ws.rs.*;
@@ -11,10 +11,10 @@ import help.*;
 
 @Path("/stundenplaene")
 public class StundenplaeneR {
-	public XMLWorker xmlWork;
+	public XmlHelper xmlWork;
 
     public StundenplaeneR() throws JAXBException{
-		this.xmlWork = new XMLWorker();
+		this.xmlWork = new XmlHelper();
 	}
     
     /**
