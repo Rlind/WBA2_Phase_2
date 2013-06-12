@@ -10,7 +10,7 @@
               <xs:element type="xs:string" name="date"/>
               <xs:element type="xs:string" name="pic"/>
             </xs:sequence>
-            <xs:attribute type="xs:byte" name="id" use="optional"/>
+            <xs:attribute type="xs:int" name="id" use="optional"/>
           </xs:complexType>
         </xs:element>
       </xs:sequence>

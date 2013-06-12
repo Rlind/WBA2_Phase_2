@@ -11,7 +11,7 @@
               <xs:element type="xs:string" name="genre"/>
               <xs:element type="xs:string" name="description"/>
             </xs:sequence>
-            <xs:attribute type="xs:byte" name="id" use="optional"/>
+            <xs:attribute type="xs:int" name="id" use="optional"/>
           </xs:complexType>
         </xs:element>
       </xs:sequence>

@@ -6,7 +6,7 @@ public class AppClient {
 	public static void main(String[] args) {
 		String url = "http://localhost:4434";
 
-	      url = url + "/stundenplaene";
+	      url = url + "/musikseite";
 
 	      WebResource wrs = Client.create().resource(url);
 
