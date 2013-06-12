@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.6 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2013.05.15 um 03:51:02 PM CEST 
+// Generiert: 2013.06.12 um 02:40:40 PM CEST 
 //
 
 
@@ -39,7 +39,7 @@ import javax.xml.bind.annotation.XmlType;
  *                   &lt;element name="genre" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                   &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                 &lt;/sequence>
- *                 &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}byte" />
+ *                 &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}int" />
  *               &lt;/restriction>
  *             &lt;/complexContent>
  *           &lt;/complexType>
@@ -107,7 +107,7 @@ public class Interpreten {
      *         &lt;element name="genre" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *       &lt;/sequence>
-     *       &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}byte" />
+     *       &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}int" />
      *     &lt;/restriction>
      *   &lt;/complexContent>
      * &lt;/complexType>
@@ -136,7 +136,7 @@ public class Interpreten {
         @XmlElement(required = true)
         protected String description;
         @XmlAttribute(name = "id")
-        protected Byte id;
+        protected Integer id;
 
         /**
          * Ruft den Wert der name-Eigenschaft ab.
@@ -263,10 +263,10 @@ public class Interpreten {
          * 
          * @return
          *     possible object is
-         *     {@link Byte }
+         *     {@link Integer }
          *     
          */
-        public Byte getId() {
+        public Integer getId() {
             return id;
         }
 
@@ -275,10 +275,10 @@ public class Interpreten {
          * 
          * @param value
          *     allowed object is
-         *     {@link Byte }
+         *     {@link Integer }
          *     
          */
-        public void setId(Byte value) {
+        public void setId(Integer value) {
             this.id = value;
         }
 

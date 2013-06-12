@@ -131,7 +131,7 @@ public class Users {
         @XmlElement(required = true)
         protected String pic;
         @XmlAttribute(name = "id")
-        protected Byte id;
+        protected Integer id;
 
         /**
          * Ruft den Wert der nick-Eigenschaft ab.
@@ -237,7 +237,7 @@ public class Users {
          *     {@link Byte }
          *     
          */
-        public Byte getId() {
+        public Integer getId() {
             return id;
         }
 
@@ -249,7 +249,7 @@ public class Users {
          *     {@link Byte }
          *     
          */
-        public void setId(Byte value) {
+        public void setId(Integer value) {
             this.id = value;
         }
 

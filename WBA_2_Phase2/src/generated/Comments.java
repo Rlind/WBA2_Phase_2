@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.6 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2013.05.15 um 03:50:32 PM CEST 
+// Generiert: 2013.06.05 um 04:53:00 PM CEST 
 //
 
 
@@ -12,9 +12,11 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
+
 
 /**
  * <p>Java-Klasse für anonymous complex type.
@@ -35,6 +37,7 @@ import javax.xml.bind.annotation.XmlType;
  *                   &lt;element name="date" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                   &lt;element name="text" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                 &lt;/sequence>
+ *                 &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}byte" />
  *               &lt;/restriction>
  *             &lt;/complexContent>
  *           &lt;/complexType>
@@ -100,6 +103,7 @@ public class Comments {
      *         &lt;element name="date" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *         &lt;element name="text" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *       &lt;/sequence>
+     *       &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}byte" />
      *     &lt;/restriction>
      *   &lt;/complexContent>
      * &lt;/complexType>
@@ -121,6 +125,8 @@ public class Comments {
         protected String date;
         @XmlElement(required = true)
         protected String text;
+        @XmlAttribute(name = "id")
+        protected Byte id;
 
         /**
          * Ruft den Wert der user-Eigenschaft ab.
@@ -193,7 +199,31 @@ public class Comments {
         public void setText(String value) {
             this.text = value;
         }
-        
+
+        /**
+         * Ruft den Wert der id-Eigenschaft ab.
+         * 
+         * @return
+         *     possible object is
+         *     {@link Byte }
+         *     
+         */
+        public Byte getId() {
+            return id;
+        }
+
+        /**
+         * Legt den Wert der id-Eigenschaft fest.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link Byte }
+         *     
+         */
+        public void setId(Byte value) {
+            this.id = value;
+        }
+
     }
 
 }

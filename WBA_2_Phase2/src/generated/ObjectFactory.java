@@ -52,6 +52,10 @@ public class ObjectFactory {
         return new Users.User();
     }
 
+    /**
+     * Create an instance of {@link Comments }
+     * 
+     */
     public Comments createComments() {
         return new Comments();
     }
@@ -91,5 +95,6 @@ public class ObjectFactory {
     public Songs.Song createSongsSong() {
         return new Songs.Song();
     }
+    
 
 }
