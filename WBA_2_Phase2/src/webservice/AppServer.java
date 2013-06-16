@@ -7,7 +7,7 @@ public class AppServer
 {
    public static void main( String[] args ) throws Exception
    {
-      String url = "http://localhost:4434";
+      String url = "http://localhost:4534";
       
 
       SelectorThread srv = GrizzlyServerFactory.create( url );

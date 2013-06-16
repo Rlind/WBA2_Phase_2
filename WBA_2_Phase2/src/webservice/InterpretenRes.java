@@ -19,7 +19,7 @@ import generated.Interpreten;
 import generated.Interpreten.Interpret;
 import webservice.XmlHelper;
 
-@Path("users/")
+@Path("/interpreten")
 public class InterpretenRes {
 
 	public XmlHelper xmlHelp;

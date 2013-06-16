@@ -43,7 +43,7 @@ public class XmlHelper {
 	 */
 	public Comments unmarshalComments() throws JAXBException{
 		Unmarshaller unmarshal = comments.createUnmarshaller();
-		Comments comments = (Comments) unmarshal.unmarshal(new File("src/XMLs/Buchungen.xml"));
+		Comments comments = (Comments) unmarshal.unmarshal(new File("src/xmlxsd/Comment.xml"));
 
 		return comments;
 	}
@@ -57,12 +57,12 @@ public class XmlHelper {
 	 */
 	public void marshalComments(Comments commentsliste) throws JAXBException, SAXException, FileNotFoundException{
 		SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-        Schema schema = schemaFactory.newSchema(new File("src/Comments.xsd"));
+        Schema schema = schemaFactory.newSchema(new File("src/xmlxsd/Comment.xsd"));
 		Marshaller marshal = comments.createMarshaller();
 		marshal.setSchema(schema);
         marshal.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
         marshal.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-		FileOutputStream file = new FileOutputStream("src/Comments.xml");
+		FileOutputStream file = new FileOutputStream("src/xmlxsd/Comment.xml");
 		marshal.marshal(commentsliste, file);
 	}
 
@@ -73,7 +73,7 @@ public class XmlHelper {
 	 */
 	public Interpreten unmarshalInterpreten() throws JAXBException{
 		Unmarshaller unmarshal = interpreten.createUnmarshaller();
-		Interpreten interpreten = (Interpreten) unmarshal.unmarshal(new File("src/Interpreten.xml"));
+		Interpreten interpreten = (Interpreten) unmarshal.unmarshal(new File("src/xmlxsd/Interpreten.xml"));
 
 		return interpreten;
 	}
@@ -87,12 +87,12 @@ public class XmlHelper {
 	 */
 	public void marshalInterpreten(Interpreten interpretenliste) throws JAXBException, SAXException, FileNotFoundException{
 		SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-        Schema schema = schemaFactory.newSchema(new File("src/Interpreten.xsd"));
+        Schema schema = schemaFactory.newSchema(new File("src/xmlxsd/Interpreten.xsd"));
 		Marshaller marshal = interpreten.createMarshaller();
 		marshal.setSchema(schema);
         marshal.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
         marshal.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-		FileOutputStream file = new FileOutputStream("src/Interpreten.xml");
+		FileOutputStream file = new FileOutputStream("src/xmlxsd/Interpreten.xml");
 		marshal.marshal(interpretenliste, file);
 	}
 
@@ -103,7 +103,7 @@ public class XmlHelper {
 	 */
 	public Songs unmarshalSongs() throws JAXBException{
 		Unmarshaller unmarshal = songs.createUnmarshaller();
-		Songs songs = (Songs) unmarshal.unmarshal(new File("src/Songs.xml"));
+		Songs songs = (Songs) unmarshal.unmarshal(new File("src/xmlxsd/Songs.xml"));
 
 		return songs;
 	}
@@ -117,12 +117,12 @@ public class XmlHelper {
 	 */
 	public void marshalSongs(Songs songsliste) throws JAXBException, SAXException, FileNotFoundException{
 		SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-        Schema schema = schemaFactory.newSchema(new File("src/Songs.xsd"));
+        Schema schema = schemaFactory.newSchema(new File("src/xmlxsd/Songs.xsd"));
 		Marshaller marshal = songs.createMarshaller();
 		marshal.setSchema(schema);
 		marshal.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
 		marshal.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-		FileOutputStream file = new FileOutputStream("src/Songs.xml");
+		FileOutputStream file = new FileOutputStream("src/xmlxsd/Songs.xml");
 		marshal.marshal(songsliste, file);
 	}
 
@@ -133,7 +133,7 @@ public class XmlHelper {
 	 */
 	public Users unmarshalUsers() throws JAXBException{
 		Unmarshaller unmarshal = users.createUnmarshaller();
-		Users users = (Users) unmarshal.unmarshal(new File("src/Users.xml"));
+		Users users = (Users) unmarshal.unmarshal(new File("src/xmlxsd/User.xml"));
 
 		return users;
 	}
@@ -147,12 +147,12 @@ public class XmlHelper {
 	 */
 	public void marshalUsers(Users usersliste) throws JAXBException, SAXException, FileNotFoundException{
 		SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-        Schema schema = schemaFactory.newSchema(new File("src/Users.xsd"));
+        Schema schema = schemaFactory.newSchema(new File("src/xmlxsd/User.xsd"));
 		Marshaller marshal = users.createMarshaller();
 		marshal.setSchema(schema);
 		marshal.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
 		marshal.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-		FileOutputStream file = new FileOutputStream("src/Users.xml");
+		FileOutputStream file = new FileOutputStream("src/xmlxsd/User.xml");
 		marshal.marshal(usersliste, file);
 	}
 

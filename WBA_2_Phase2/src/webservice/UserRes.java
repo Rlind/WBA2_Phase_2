@@ -19,7 +19,7 @@ import generated.Users;
 import generated.Users.User;
 import webservice.XmlHelper;
 
-@Path("users/")
+@Path("/users")
 public class UserRes {
 
 	public XmlHelper xmlHelp;
