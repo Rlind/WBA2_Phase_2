@@ -18,8 +18,6 @@ import javax.xml.datatype.DatatypeConfigurationException;
 
 import org.xml.sax.SAXException;
 
-import Evidamman2.Logger;
-
 import generated.Users;
 import generated.Users.User;
 import webservice.XmlHelper;
