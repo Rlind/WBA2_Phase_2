@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.jivesoftware.smack.ConnectionConfiguration;
 import org.jivesoftware.smack.Connection;
+import org.jivesoftware.smack.SASLAuthentication;
 import org.jivesoftware.smack.XMPPConnection;
 import org.jivesoftware.smack.XMPPException;
 import org.jivesoftware.smackx.ServiceDiscoveryManager;
@@ -60,6 +61,7 @@ public class Xmpp {
 			sdm = new ServiceDiscoveryManager(con);
 		}
 **/
+/**	
 		public boolean connect(String host, int port) {
 
 			ConnectionConfiguration config = new ConnectionConfiguration(host, port);
@@ -86,6 +88,32 @@ public class Xmpp {
 
 			this.user = username;
 			return true;
+		}**/
+
+		public void makeConn() {
+
+			System.out.println(server);
+			ConnectionConfiguration config = new ConnectionConfiguration(server,port);
+			// pass some connection options
+			config.setSASLAuthenticationEnabled(true);
+			SASLAuthentication.supportSASLMechanism("PLAIN", 0);
+
+			con = new XMPPConnection(config);
+		}
+
+		public boolean doConnect() {
+			// let's connect
+			try {
+				con.connect();
+				con.login(user, passw);
+				// Create a pubsub manager using an existing Connection
+				psm = new PubSubManager(con, "pubsub." + con.getHost());
+				System.out.println("LoggedIn");
+				return true;
+			} catch (XMPPException e) {
+				System.err.println("Login failed!");
+				return false;
+			}
 		}
 		
 		public void discoverServices() throws XMPPException {
