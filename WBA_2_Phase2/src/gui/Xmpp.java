@@ -35,61 +35,6 @@ public class Xmpp {
 	private PubSubManager psm;
 	private ServiceDiscoveryManager sdm;
 
-		/**
-		 * Verbindung zum XMPP Server aufbauen
-		 * User und Passwort müssen den auf dem XMPP-Server enstprechen
-		 * 
-		 * @param user
-		 * @param passw
-		 */
-/**		public Xmpp(String user, String passw) {
-			this.user = user;
-			con = new XMPPConnection(XmppData.host);
-			try {
-				con.connect();
-			} catch (XMPPException e) {
-				e.printStackTrace();
-				System.out.println("Connection failed");
-			}
-			try {
-				con.login(user, passw);
-			} catch (XMPPException e) {
-				e.printStackTrace();
-				System.out.println("Login failed");
-			}
-			psm = new PubSubManager(con);
-			sdm = new ServiceDiscoveryManager(con);
-		}
-**/
-/**	
-		public boolean connect(String host, int port) {
-
-			ConnectionConfiguration config = new ConnectionConfiguration(host, port);
-			con = new XMPPConnection(config);
-
-			try {
-				con.connect();
-				psm = new PubSubManager(con, "pubsub." + con.getHost());
-			} catch (XMPPException e) {
-				return false;
-			}
-
-			this.host = host;
-		return true;
-		}
-		
-		public boolean login(String username, String password) {
-
-			try {
-				con.login(username, password);
-			} catch (XMPPException e) {
-				return false;
-			}
-
-			this.user = username;
-			return true;
-		}**/
-
 		public void makeConn() {
 
 			System.out.println(server);
