@@ -12,7 +12,7 @@
               <xs:element type="xs:string" name="description"/>
               <xs:element type="xs:string" name="rate"/>
             </xs:sequence>
-            <xs:attribute type="xs:byte" name="id" use="optional"/>
+            <xs:attribute type="xs:byte" name="id" use="required"/>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
