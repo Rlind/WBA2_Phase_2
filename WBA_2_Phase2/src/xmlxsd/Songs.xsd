@@ -18,4 +18,40 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
+  <xs:element name="genre">
+  	<xs:simpleType>
+  		<xs:restriction base="xs:string">
+  			<xs:enumeration value="Rock"></xs:enumeration>
+  			<xs:enumeration value="Pop"></xs:enumeration>
+  			<xs:enumeration value="Hardrock"></xs:enumeration>
+  			<xs:enumeration value="Clasik"></xs:enumeration>
+  			<xs:enumeration value="Jazz"></xs:enumeration>
+  			<xs:enumeration value="RnB"></xs:enumeration>
+  			<xs:enumeration value="Reggae"></xs:enumeration>
+  			<xs:enumeration value="Elecktro"></xs:enumeration>
+  			<xs:enumeration value="Soul"></xs:enumeration>
+  			<xs:enumeration value="Schlager"></xs:enumeration>
+  			<xs:enumeration value="Punk"></xs:enumeration>
+  		</xs:restriction>
+  	</xs:simpleType> 
+  </xs:element>
+  <xs:element name="releasedate">
+  	<xs:simpleType>
+  		<xs:restriction base="xs:positiveInterger">
+  			<xs:maxInclusive value="2014"/>
+  			<xs:minInclusive value="1800"/>
+  		</xs:restriction>
+  	</xs:simpleType>
+  </xs:element>
+
+  <xs:element name="rate">
+  	<xs:simpleType>
+  		<xs:restriction base="xs:positiveInterger">
+  			<xs:maxInclusive value="0"/>
+  			<xs:minInclusive value="5"/>
+  		</xs:restriction>
+  	</xs:simpleType>
+  </xs:element>
+
 </xs:schema>
