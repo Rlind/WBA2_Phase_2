@@ -38,7 +38,7 @@ public class InterpretenRes {
 	 */
 	@GET 
 	@Produces("application/xml")
-	public Interpreten getUsers() throws JAXBException, SAXException{
+	public Interpreten getInterpreten() throws JAXBException, SAXException{
 		return this.xmlHelp.unmarshalInterpreten();
 	}
 
