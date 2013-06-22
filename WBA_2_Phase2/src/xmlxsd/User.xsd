@@ -8,13 +8,12 @@
 						<xs:sequence>
 							<xs:element type="xs:string" name="nick" />
 							<xs:element type="xs:string" name="name" />
-							<xs:element type="xs:string" name="date" />
-							<xs:element type="xs:string" name="pic" />
+							<xs:element type="xs:date" name="date" />
+							<xs:element type="xs:image" name="pic" />
 						</xs:sequence>
 						<xs:attribute type="xs:int" name="id" use="required" />
 					</xs:complexType>
 				</xs:element>
 			</xs:sequence>
 		</xs:complexType>
-	</xs:element>
 </xs:schema>
