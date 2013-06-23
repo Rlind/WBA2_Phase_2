@@ -7,5 +7,19 @@
 	<classpathentry kind="lib" path="C:/Users/Ramona Lind/Documents/Uni/Eclipse/jaxb-ri-2.2.6/lib/jaxb-impl-javadoc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Ramona Lind/Documents/Uni/Eclipse/jaxb-ri-2.2.6/lib/jaxb-xjc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Ramona Lind/Documents/Uni/Eclipse/jaxb-ri-2.2.6/lib/jaxb-xjc-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ramona Lind/Documents/Uni/Eclipse/jersey-archive-1.1.5.1/asm-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ramona Lind/Documents/Uni/Eclipse/jersey-archive-1.1.5.1/jackson-core-asl-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ramona Lind/Documents/Uni/Eclipse/jersey-archive-1.1.5.1/jersey-client-1.1.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ramona Lind/Documents/Uni/Eclipse/jersey-archive-1.1.5.1/jersey-core-1.1.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ramona Lind/Documents/Uni/Eclipse/jersey-archive-1.1.5.1/jersey-json-1.1.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ramona Lind/Documents/Uni/Eclipse/jersey-archive-1.1.5.1/jersey-server-1.1.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ramona Lind/Documents/Uni/Eclipse/jersey-archive-1.1.5.1/jettison-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ramona Lind/Documents/Uni/Eclipse/jersey-archive-1.1.5.1/jsr311-api-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ramona Lind/Documents/Uni/Eclipse/grizzly-servlet-webserver-1.9.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ramona Lind/Documents/Uni/Eclipse/smack_3_3_0/smack.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ramona Lind/Documents/Uni/Eclipse/smack_3_3_0/smackx.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ramona Lind/Documents/Uni/Eclipse/smack_3_3_0/smackx-debug.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ramona Lind/Documents/Uni/Eclipse/smack_3_3_0/smackx-jingle.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ramona Lind/Documents/Uni/Eclipse/miglayout-4.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
